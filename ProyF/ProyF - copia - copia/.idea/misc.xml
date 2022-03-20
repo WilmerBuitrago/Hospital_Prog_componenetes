@@ -3,6 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/muy/Documents/GitHub/Hospital_Prog_componenetes/ProyF/ProyF - copia - copia/app/src/main/res/drawable/border.xml" value="0.1945" />
+        <entry key="..\:/Users/muy/Documents/GitHub/Hospital_Prog_componenetes/ProyF/ProyF - copia - copia/app/src/main/res/drawable/border_bottom.xml" value="0.1945" />
+        <entry key="..\:/Users/muy/Documents/GitHub/Hospital_Prog_componenetes/ProyF/ProyF - copia - copia/app/src/main/res/drawable/border_top.xml" value="0.1945" />
+        <entry key="..\:/Users/muy/Documents/GitHub/Hospital_Prog_componenetes/ProyF/ProyF - copia - copia/app/src/main/res/drawable/fondologin.xml" value="0.171" />
         <entry key="..\:/Users/muy/Documents/GitHub/Hospital_Prog_componenetes/ProyF/ProyF - copia - copia/app/src/main/res/layout/activity_login.xml" value="0.25" />
       </map>
     </option>

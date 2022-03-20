@@ -110,7 +110,7 @@ public class EditarDatosAdmin extends AppCompatActivity {
     //Funcion de editar
 
     public void editaradmin(String idadmin,String nomadmin, String apadmin,String diradmin,String clavadamin,String fechaadmin, String teladmin){
-        String URL="http://192.168.1.3/hos/EditarAdmin.php";
+        String URL="http://192.168.100.18/hospital/EditarAdmin.php";
         StringRequest stringRequest= new StringRequest(Request.Method.POST, URL, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
