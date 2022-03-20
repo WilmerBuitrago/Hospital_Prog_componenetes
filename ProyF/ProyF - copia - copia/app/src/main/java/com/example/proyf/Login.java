@@ -26,7 +26,7 @@ import android.os.Bundle;
 
 public class Login extends AppCompatActivity {
 
-    String URL ="http://192.168.1.3/hos/login.php";
+    String URL ="http://luis/hos/login.php";
 
     EditText etUsuario, etContrasena;
     Button btnLogin, btnRegistrar,btnForgot;
