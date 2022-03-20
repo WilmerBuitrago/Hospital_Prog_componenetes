@@ -7,7 +7,7 @@ function conectar(){
 $host="localhost"; //el nombre del servidor
 $user="root"; // el usuario de mysql 
 $pass="";// password
-$dbname="hos";// el nombre de la BD
+$dbname="hospital";// el nombre de la BD
 /// relizamos la conexion a la BD
 
 
