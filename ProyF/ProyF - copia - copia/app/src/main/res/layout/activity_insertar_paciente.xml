@@ -261,7 +261,7 @@
             android:layout_marginTop="2dp"
             android:ems="10"
             android:inputType="number"
-            app:layout_constraintStart_toEndOf="@+id/textView38"
+            app:layout_constraintStart_toEndOf="@+id/btnForgot"
             app:layout_constraintTop_toBottomOf="@+id/edtInsertarPacTelefono" />
 
         <Spinner
@@ -274,7 +274,7 @@
             app:layout_constraintTop_toBottomOf="@+id/edtid_fk" />
 
         <TextView
-            android:id="@+id/textView38"
+            android:id="@+id/btnForgot"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -291,7 +291,7 @@
             android:layout_marginTop="20dp"
             android:text="Diagnostico:"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView38" />
+            app:layout_constraintTop_toBottomOf="@+id/btnForgot" />
 
         <TextView
             android:id="@+id/textView60"

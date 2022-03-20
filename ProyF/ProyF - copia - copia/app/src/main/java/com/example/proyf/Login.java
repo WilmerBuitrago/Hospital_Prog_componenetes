@@ -26,10 +26,10 @@ import android.os.Bundle;
 
 public class Login extends AppCompatActivity {
 
-    String URL ="http://192.168.0.23/hospital/login.php";
+    String URL ="http://192.168.100.18/hospital/login.php";
 
     EditText etUsuario, etContrasena;
-    Button btnLogin, btnRegistrar,btnForgot;
+    Button btnLogin, btnRegistrar;
     //CheckBox remember;
 
 
@@ -41,8 +41,8 @@ public class Login extends AppCompatActivity {
         etUsuario = findViewById(R.id.etUsuario);
         etContrasena = findViewById(R.id.etContrasena);
         btnLogin = findViewById(R.id.btnLogin);
-        btnRegistrar = findViewById(R.id.btnRegistrar);
-        btnForgot=findViewById(R.id.btnForgot);
+      //  btnRegistrar = findViewById(R.id.btnRegistrar);
+      //  btnForgot=findViewById(R.id.btnForgot);
         /*remember= findViewById(R.id.RememberMe);
 
         SharedPreferences preferences= getSharedPreferences("checkbox", MODE_PRIVATE);
@@ -63,20 +63,20 @@ public class Login extends AppCompatActivity {
 
             }
         });
-        btnRegistrar.setOnClickListener(new View.OnClickListener() {
+     /*   btnRegistrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Login.this, Registro.class);
                 startActivity(intent);
             }
-        });
-        btnForgot.setOnClickListener(new View.OnClickListener() {
+        });*/
+     /*   btnForgot.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Login.this, OlvidoClave.class);
                 startActivity(intent);
             }
-        });
+        });*/
 
         /*remember.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
