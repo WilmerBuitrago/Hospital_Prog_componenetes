@@ -16,6 +16,7 @@ import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 
@@ -24,10 +25,13 @@ import java.util.Hashtable;
 import java.util.Map;
 import android.os.Bundle;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
 public class Login extends AppCompatActivity {
 
-    String URL ="http://192.168.100.18/hospital/login.php";
-
+    String URL ="http://192.168.0.23/hospital/login.php";
+    RequestQueue requestQueue;
     EditText etUsuario, etContrasena;
     Button btnLogin, btnRegistrar;
     //CheckBox remember;
@@ -37,7 +41,7 @@ public class Login extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-
+        requestQueue= Volley.newRequestQueue(this);
         etUsuario = findViewById(R.id.etUsuario);
         etContrasena = findViewById(R.id.etContrasena);
         btnLogin = findViewById(R.id.btnLogin);
@@ -154,12 +158,49 @@ public class Login extends AppCompatActivity {
         requestQueue.add(stringRequest);
 
     }
-    public void buscar(){
-        Intent intent= new Intent(this,EditarDatosAdmin.class);
-        intent.putExtra("user",etUsuario.getText().toString().trim());
-        startActivity(intent);
 
+    public void buscar(){
+
+        String URL="http://192.168.0.23/hospital/mostralogin.php?user="+etUsuario.getText();
+        ;
+        JsonObjectRequest jsonObjectRequest= new JsonObjectRequest(
+                 URL, null, new Response.Listener<JSONObject>() {
+            @Override
+            public void onResponse(JSONObject response) {
+                String rol;
+                try {
+
+                    rol = response.getString("rol");
+                    rol(rol);
+                } catch (JSONException e) {
+                    e.printStackTrace();
+
+                }
+
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                Toast.makeText(Login.this, "ERROR ", Toast.LENGTH_LONG).show();
+            }
+        }
+
+        );
+        requestQueue.add(jsonObjectRequest);
 
 
     }
+    public void rol(String rol){
+
+        if(rol.equals("admin")) {
+
+            Intent intent = new Intent(this,EditarDatosAdmin.class);
+            intent.putExtra("user", etUsuario.getText().toString().trim());
+            startActivity(intent);
+
+        }else{
+            Toast.makeText(Login.this, "ERROR2 ", Toast.LENGTH_LONG).show();
+        }
+    }
+
 }

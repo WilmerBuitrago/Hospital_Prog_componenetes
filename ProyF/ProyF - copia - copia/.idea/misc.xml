@@ -3,10 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Luis/Documents/GitHub/Hospital_Prog_componenetes/ProyF/ProyF - copia - copia/app/src/main/res/layout/activity_login.xml" value="0.16259057971014493" />
         <entry key="..\:/Users/muy/Documents/GitHub/Hospital_Prog_componenetes/ProyF/ProyF - copia - copia/app/src/main/res/layout/activity_login.xml" value="0.25" />
       </map>
     </option>
   </component>
   <component name="ExternalStorageConfigurationManager" enabled="true" />
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="11" project-jdk-type="JavaSDK" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK" />
 </project>
