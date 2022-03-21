@@ -41,7 +41,7 @@ public class Login extends AppCompatActivity {
         etUsuario = findViewById(R.id.etUsuario);
         etContrasena = findViewById(R.id.etContrasena);
         btnLogin = findViewById(R.id.btnLogin);
-      //  btnRegistrar = findViewById(R.id.btnRegistrar);
+       btnRegistrar = findViewById(R.id.btnRegistrar);
       //  btnForgot=findViewById(R.id.btnForgot);
         /*remember= findViewById(R.id.RememberMe);
 
@@ -63,13 +63,13 @@ public class Login extends AppCompatActivity {
 
             }
         });
-     /*   btnRegistrar.setOnClickListener(new View.OnClickListener() {
+        btnRegistrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Login.this, Registro.class);
                 startActivity(intent);
             }
-        });*/
+        });
      /*   btnForgot.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
